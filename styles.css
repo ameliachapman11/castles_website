@@ -1,10 +1,34 @@
 body {
-   background-color:#00a7ff;
+   background-color:#173871;
    min-width:500px;
+   font-family: 'Hedvig Letters Serif', serif;
+   color: white;
+
+   /* Removes default border */
+   margin: 0;
+   padding: 0;
 }
 
-.btn-group button {
-   width:15%;
-   font-size:15px;
-   background-color:white;
+nav {
+   display: flex;
+   align-items: center;
+   background-color: #3272C5;
+   padding: 20px 40px;       
+}
+
+/* Pushes 2nd & subsequent links to the right */
+nav a:nth-child(2) {
+   margin-left: auto;
+}
+
+.nav-link{
+   font-size: 16px;
+   margin-left: 40px;
+   text-decoration: none;
+   color: white;
+}
+
+.nav-link.home{
+   font-size: 32px;
+   margin-left: 0px;
 }
