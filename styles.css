@@ -1,0 +1,10 @@
+body {
+   background-color:#00a7ff;
+   min-width:500px;
+}
+
+.btn-group button {
+   width:15%;
+   font-size:15px;
+   background-color:white;
+}
