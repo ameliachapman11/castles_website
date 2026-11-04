@@ -1,8 +1,15 @@
+:root {
+   --bg-color: #173871;
+   --secondary-color: #3272C5;
+   --lighter-color: #B5D5FF;
+   --text-color: white;
+}
+
 body {
-   background-color:#173871;
+   background-color: var(--bg-color);
    min-width:500px;
    font-family: 'Hedvig Letters Serif', serif;
-   color: white;
+   color: var(--text-color);
 
    /* Removes default border */
    margin: 0;
@@ -12,24 +19,24 @@ body {
 nav {
    display: flex;
    align-items: center;
-   background-color: #3272C5;
-   padding: 20px 40px;
+   background-color: var(--secondary-color);
+   padding: 12px 32px;
 }
 
 .nav-link{
    font-size: 16px;
-   margin-left: 40px;
+   margin-left: 24px;
    text-decoration: none;
-   color: white;
+   color: var(--text-color);
 }
 
 .nav-link.home{
-   font-size: 32px;
+   font-size: 28px;
    margin-left: 0;
    margin-right: auto;
 }
 
-site-footer {
+.site-footer {
    display: block;
    margin-top: 30px;
    font-size: 14px;
@@ -41,4 +48,39 @@ footer{
    justify-content: center;
    gap: 10%;
    padding: 20px 0;
+}
+
+button{
+   padding: 10px 20px; 
+   background-color: var(--secondary-color);
+   
+   font-size: 28px;
+   font-family: 'Hedvig Letters Serif', serif;
+   color: var(--text-color);
+   
+   border-radius: 15px;
+   border: 3px solid var(--lighter-color);
+   padding: 15px 30px;
+
+}
+
+.description-background {
+   box-sizing: border-box;
+   width: 100%;
+   margin: 20px 0 0 0;
+   padding: 40px 0;
+   background-image: url("birdsandocean.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+.description-content {
+   box-sizing: border-box;
+   width: min(90%, 900px);
+   margin: 0 auto;
+   padding: clamp(12px, 2vw, 24px);
+   border-radius: 16px;
+   background-color: color-mix(in srgb, var(--bg-color) 82%, transparent);
+   text-align: left;
+   line-height: 1.6;
 }
