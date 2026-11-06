@@ -1,13 +1,12 @@
 :root {
-   --bg-color: #173871;
-   --secondary-color: #3272C5;
-   --lighter-color: #B5D5FF;
+   --deep-blue: #173871;
+   --medium-blue: #3272C5;
+   --light-blue: #B5D5FF;
    --text-color: white;
 }
 
 body {
-   background-color: var(--bg-color);
-   min-width:500px;
+   background-color: var(--deep-blue);
    font-family: 'Hedvig Letters Serif', serif;
    color: var(--text-color);
 
@@ -21,7 +20,7 @@ nav {
    top: 0;
    display: flex;
    align-items: center;
-   background-color: var(--secondary-color);
+   background-color: var(--medium-blue);
    padding: 12px 32px;
 }
 
@@ -49,40 +48,22 @@ footer{
    flex-wrap: wrap;
    justify-content: center;
    gap: 10%;
-   padding: 20px 0;
+   padding: 10px 0;
+
+   box-sizing: border-box;
+   width: 100%;
+   background-color: var(--deep-blue);
 }
 
 button{
    padding: 10px 20px; 
-   background-color: var(--secondary-color);
+   background-color: var(--medium-blue);
    
    font-size: 28px;
    font-family: 'Hedvig Letters Serif', serif;
    color: var(--text-color);
    
    border-radius: 15px;
-   border: 3px solid var(--lighter-color);
-   padding: 15px 30px;
+   border: 5px solid var(--light-blue);
 
-}
-
-.description-background {
-   box-sizing: border-box;
-   width: 100%;
-   margin: 20px 0 0 0;
-   padding: 40px 0;
-   background-image: url("assets/birdsandocean.jpg");
-   background-position: center;
-   background-size: cover;
-}
-
-.description-content {
-   box-sizing: border-box;
-   width: min(90%, 900px);
-   margin: 0 auto;
-   padding: clamp(12px, 2vw, 24px);
-   border-radius: 16px;
-   background-color: color-mix(in srgb, var(--bg-color) 82%, transparent);
-   text-align: left;
-   line-height: 1.6;
 }

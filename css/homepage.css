@@ -1,9 +1,16 @@
+:root {
+   --deep-blue: #173871;
+   --medium-blue: #3272C5;
+   --light-blue: #B5D5FF;
+   --text-color: white;
+}
+
 /* Night sky background */
 .night-sky {
     position: fixed;
     inset: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     background:
         radial-gradient(
@@ -47,4 +54,23 @@
         animation: none;
         opacity: 0.7;
     }
+}
+
+/* Description box */
+.description-background {
+   box-sizing: border-box;
+   width: 100%;
+   padding: 40px 0;
+}
+
+.description-content {
+   box-sizing: border-box;
+   width: 60%;
+   padding: 10px 40px;
+   border-radius: 16px;
+   background-color: color-mix(in srgb, var(--medium-blue) 60%, transparent);
+   text-align: left;
+   line-height: 1.6;
+   border-radius: 15px;
+   border: 7px solid var(--light-blue);
 }
